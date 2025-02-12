@@ -4,6 +4,7 @@ body {
     padding: 20px; 
     background-color: #05C1FF;
 }
+
 #logo {
     width: 200px;
     cursor: pointer;
@@ -11,12 +12,14 @@ body {
     top: -50px;
     left: -10px;
 }
+
 #main-logo {
     width: 350px;
     margin: 20px auto;
     display: block;
 }
-.button {
+
+button.hitMe {
     display: inline-block;
     margin: 40px;
     padding: 25px 88px;
@@ -31,9 +34,11 @@ body {
     transition: background 0.3s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.button:hover {
+
+button.hitMe:hover {
     background-color: #0047b3;
 }
+
 select {
     appearance: none;
     margin: 40px;
@@ -48,4 +53,33 @@ select {
     cursor: pointer;
     text-transform: Extra Bold Italic;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#joke-container {
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#joke-container p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+#joke-container.error {
+    background-color: #FF6B6B;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
 }
